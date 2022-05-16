@@ -7,8 +7,9 @@ contract SimpleStorage {
     uint256 favNumber;
 
 // function call => transaction
-    function store(uint256 _favNumber) public {
+    function store(uint256 _favNumber) public returns (uint256) {
         favNumber = _favNumber; 
+        return favNumber;
     }
 
 
